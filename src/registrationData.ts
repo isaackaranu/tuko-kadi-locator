@@ -692,5 +692,413 @@
     { id: "PERM-WESTPOKOT-KAPENGURIA", county: "West Pokot County", constituency: "Kapenguria", ward: "All Wards", locationName: "Deputy Commissioner's Compound", locationType: "Permanent_Office", operatingHours: "8:00 AM - 5:00 PM (Mon-Fri)", address: "Deputy Commissioner's Compound", landmark: "DCC Offices", ...getLocationCoordinates("West Pokot", 0) },
     { id: "PERM-WESTPOKOT-SIGOR", county: "West Pokot County", constituency: "Sigor", ward: "All Wards", locationName: "KVDA", locationType: "Permanent_Office", operatingHours: "8:00 AM - 5:00 PM (Mon-Fri)", address: "KVDA", landmark: "KVDA Offices", ...getLocationCoordinates("West Pokot", 1) },
     { id: "PERM-WESTPOKOT-KACHELIBA", county: "West Pokot County", constituency: "Kacheliba", ward: "All Wards", locationName: "Holy Cross Catholic Church", locationType: "Permanent_Office", operatingHours: "8:00 AM - 5:00 PM (Mon-Fri)", address: "Holy Cross Catholic Church Kacheliba", landmark: "Catholic Church", ...getLocationCoordinates("West Pokot", 2) },
-    { id: "PERM-WESTPOKOT-POKOSOUTH", county: "West Pokot County", constituency: "Pokot South", ward: "All Wards", locationName: "St Marks Development Centre", locationType: "Permanent_Office", operatingHours: "8:00 AM - 5:00 PM (Mon-Fri)", address: "St Marks Development Centre", landmark: "DCC Offices", ...getLocationCoordinates("West Pokot", 3) }
+    { id: "PERM-WESTPOKOT-POKOSOUTH", county: "West Pokot County", constituency: "Pokot South", ward: "All Wards", locationName: "St Marks Development Centre", locationType: "Permanent_Office", operatingHours: "8:00 AM - 5:00 PM (Mon-Fri)", address: "St Marks Development Centre", landmark: "DCC Offices", ...getLocationCoordinates("West Pokot", 3) },
+    
+    // =========================================================================
+    // MOBILE KITS: KIAMBU COUNTY - JUJA CONSTITUENCY
+    // =========================================================================
+
+    // --- WARD: JUJA ---
+    {
+      id: "KIT-JUJA-JUJA-07-01", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Kibii Pry/Kays Estate", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kibii Primary",
+      schedule: [{ date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 10)
+    },
+    {
+      id: "KIT-JUJA-JUJA-07-02", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Juja Stage/Juja Square", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Juja Stage",
+      schedule: [{ date: "2026-03-31", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 11)
+    },
+    {
+      id: "KIT-JUJA-JUJA-07-03", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Oasis Grounds", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 1:00 PM", landmark: "Oasis Grounds",
+      schedule: [{ date: "2026-04-01", hours: "8:00 AM - 1:00 PM" }], ...getLocationCoordinates("Kiambu", 12)
+    },
+    {
+      id: "KIT-JUJA-JUJA-07-04", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "JKUAT DEB Primary", locationType: "Mobile_Kit", operatingHours: "1:00 PM - 5:00 PM", landmark: "JKUAT",
+      schedule: [{ date: "2026-04-01", hours: "1:00 PM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 13)
+    },
+    {
+      id: "KIT-JUJA-JUJA-07-05", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "DO's / Chief Camp", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "DO's Camp",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 14)
+    },
+    {
+      id: "KIT-JUJA-JUJA-07-06", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Unaitas Area", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Unaitas Area",
+      schedule: [{ date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 15)
+    },
+    {
+      id: "KIT-JUJA-JUJA-07-07", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Kenyatta Road Tank", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kenyatta Road Tank",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 16)
+    },
+    {
+      id: "KIT-JUJA-JUJA-07-08", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "ACK St Mathews Augustine", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "ACK Church",
+      schedule: [{ date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 17)
+    },
+    {
+      id: "KIT-JUJA-JUJA-08-01", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Sewage and County", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Sewage area",
+      schedule: [{ date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 18)
+    },
+    {
+      id: "KIT-JUJA-JUJA-08-02", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Power Supermarket", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Power Supermarket",
+      schedule: [{ date: "2026-03-31", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 19)
+    },
+    {
+      id: "KIT-JUJA-JUJA-08-03", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Highpoint", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Highpoint",
+      schedule: [{ date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 20)
+    },
+    {
+      id: "KIT-JUJA-JUJA-08-04", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Gachororo Dispensary", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Gachororo Dispensary",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 21)
+    },
+    {
+      id: "KIT-JUJA-JUJA-08-05", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Chief's Office Gachororo", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Chief's Office",
+      schedule: [{ date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 22)
+    },
+    {
+      id: "KIT-JUJA-JUJA-08-06", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "St Paul Dispensary", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "St Paul Dispensary",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 23)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-01", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Mung'etho", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Mung'etho",
+      schedule: [{ date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 24)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-02", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Kiaora Cofe Estate", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 12:00 PM", landmark: "Kiaora Estate",
+      schedule: [{ date: "2026-04-01", hours: "8:00 AM - 12:00 PM" }], ...getLocationCoordinates("Kiambu", 25)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-03", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Biashara Street", locationType: "Mobile_Kit", operatingHours: "12:00 PM - 5:00 PM", landmark: "Biashara Street",
+      schedule: [{ date: "2026-04-01", hours: "12:00 PM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 26)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-04", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "No.4", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 12:00 PM", landmark: "No.4 Area",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 12:00 PM" }], ...getLocationCoordinates("Kiambu", 27)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-05", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Waroma Estate", locationType: "Mobile_Kit", operatingHours: "12:00 PM - 5:00 PM", landmark: "Waroma Estate",
+      schedule: [{ date: "2026-04-02", hours: "12:00 PM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 28)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-06", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Mirimaini Primary School", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 12:00 PM", landmark: "Mirimaini Primary",
+      schedule: [{ date: "2026-04-03", hours: "8:00 AM - 12:00 PM" }], ...getLocationCoordinates("Kiambu", 29)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-07", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Mirimaini Catholic School", locationType: "Mobile_Kit", operatingHours: "1:00 PM - 5:00 PM", landmark: "Mirimaini Catholic",
+      schedule: [{ date: "2026-04-03", hours: "1:00 PM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 30)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-08", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Chemichemi Area", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Chemichemi",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 31)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-09", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Chura Complex Godown", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 12:00 PM", landmark: "Chura Complex",
+      schedule: [{ date: "2026-04-05", hours: "8:00 AM - 12:00 PM" }], ...getLocationCoordinates("Kiambu", 32)
+    },
+    {
+      id: "KIT-JUJA-JUJA-09-10", county: "Kiambu County", constituency: "Juja", ward: "Juja",
+      locationName: "Penta Godown", locationType: "Mobile_Kit", operatingHours: "1:00 PM - 5:00 PM", landmark: "Penta Godown",
+      schedule: [{ date: "2026-04-05", hours: "1:00 PM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 33)
+    },
+
+    // --- WARD: KALIMONI ---
+    {
+      id: "KIT-JUJA-KALIMONI-13-01", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Juja Farm Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Juja Farm SC",
+      schedule: [
+        { date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-02", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-04", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 34)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-14-01", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Juja Stage", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Juja Stage",
+      schedule: [{ date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 35)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-14-02", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Garage Railway", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Garage Railway",
+      schedule: [{ date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 36)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-14-03", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Juja South Estate", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Juja South Estate",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 37)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-14-04", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Catholic Church", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Catholic Church",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 38)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-15-01", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Kenyatta Road Stage", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kenyatta Road Stage",
+      schedule: [
+        { date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 39)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-15-02", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Kroad Footbridge", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kroad Footbridge",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 40)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-15-03", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Chief's Camp", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Chief's Camp",
+      schedule: [{ date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 41)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-15-04", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "Kwa Maua", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kwa Maua",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 42)
+    },
+    {
+      id: "KIT-JUJA-KALIMONI-15-05", county: "Kiambu County", constituency: "Juja", ward: "Kalimoni",
+      locationName: "PCEA Church Kenyatta Road", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "PCEA Kenyatta Road",
+      schedule: [{ date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 43)
+    },
+
+    // --- WARD: MURERA ---
+    {
+      id: "KIT-JUJA-MURERA-01-01", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "NIBS Technical College", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "NIBS College",
+      schedule: [{ date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 44)
+    },
+    {
+      id: "KIT-JUJA-MURERA-01-02", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Spur Mall", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Spur Mall",
+      schedule: [{ date: "2026-03-31", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 45)
+    },
+    {
+      id: "KIT-JUJA-MURERA-01-03", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Gwa Gairu Bodaboda (OLA)", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "OLA Petrol Station",
+      schedule: [{ date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 46)
+    },
+    {
+      id: "KIT-JUJA-MURERA-01-04", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Heritage Mabati Mills", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Heritage Mabati",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 47)
+    },
+    {
+      id: "KIT-JUJA-MURERA-01-05", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Mugutha Primary School", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Mugutha Primary",
+      schedule: [{ date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 48)
+    },
+    {
+      id: "KIT-JUJA-MURERA-01-06", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Murera Primary School", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Murera Primary",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 49)
+    },
+    {
+      id: "KIT-JUJA-MURERA-01-07", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "PCEA Church", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "PCEA Church",
+      schedule: [{ date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 50)
+    },
+    {
+      id: "KIT-JUJA-MURERA-02-01", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Wholesale Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Wholesale SC",
+      schedule: [
+        { date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-01", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 51)
+    },
+    {
+      id: "KIT-JUJA-MURERA-02-02", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Jacaranda", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Jacaranda",
+      schedule: [
+        { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-02", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 52)
+    },
+    {
+      id: "KIT-JUJA-MURERA-02-03", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "PCEA", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "PCEA",
+      schedule: [{ date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 53)
+    },
+    {
+      id: "KIT-JUJA-MURERA-03-01", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Toll Bodaboda Shade", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Toll Bodaboda Shade",
+      schedule: [{ date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 54)
+    },
+    {
+      id: "KIT-JUJA-MURERA-03-02", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Adva Park Mall", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Adva Park Mall",
+      schedule: [{ date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 55)
+    },
+    {
+      id: "KIT-JUJA-MURERA-03-03", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Bodaboda Shade Kimbo", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kimbo Bodaboda",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 56)
+    },
+    {
+      id: "KIT-JUJA-MURERA-03-04", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "GSU Camp", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "GSU Camp",
+      schedule: [{ date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 57)
+    },
+    {
+      id: "KIT-JUJA-MURERA-03-05", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Near Dakio", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Dakio Area",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 58)
+    },
+    {
+      id: "KIT-JUJA-MURERA-03-06", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "Catholic Church", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 12:00 PM", landmark: "Catholic Church",
+      schedule: [{ date: "2026-04-05", hours: "8:00 AM - 12:00 PM" }], ...getLocationCoordinates("Kiambu", 59)
+    },
+    {
+      id: "KIT-JUJA-MURERA-03-07", county: "Kiambu County", constituency: "Juja", ward: "Murera",
+      locationName: "ACK Church", locationType: "Mobile_Kit", operatingHours: "1:00 PM - 5:00 PM", landmark: "ACK Church",
+      schedule: [{ date: "2026-04-05", hours: "1:00 PM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 60)
+    },
+
+    // --- WARD: THETA ---
+    {
+      id: "KIT-JUJA-THETA-04-01", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "Ndarasha Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Ndarasha SC",
+      schedule: [
+        { date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 61)
+    },
+    {
+      id: "KIT-JUJA-THETA-04-02", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "Riuriro Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Riuriro SC",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 62)
+    },
+    {
+      id: "KIT-JUJA-THETA-04-03", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "St Paul's Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "St Paul's SC",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 63)
+    },
+    {
+      id: "KIT-JUJA-THETA-05-01", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "Kwa Kairu", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kwa Kairu",
+      schedule: [
+        { date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 64)
+    },
+    {
+      id: "KIT-JUJA-THETA-05-02", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "Exodus Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Exodus Centre",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 65)
+    },
+    {
+      id: "KIT-JUJA-THETA-05-03", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "PCEA Thome", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "PCEA Thome",
+      schedule: [{ date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 66)
+    },
+    {
+      id: "KIT-JUJA-THETA-06-01", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "Junction", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Junction Area",
+      schedule: [
+        { date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 67)
+    },
+    {
+      id: "KIT-JUJA-THETA-06-02", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "Biashara", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Biashara Area",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 68)
+    },
+    {
+      id: "KIT-JUJA-THETA-06-03", county: "Kiambu County", constituency: "Juja", ward: "Theta",
+      locationName: "Matangi", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Matangi Area",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 69)
+    },
+
+    // --- WARD: WITEITHIE ---
+    {
+      id: "KIT-JUJA-WITEITHIE-10-01", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Maraba Stage", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Maraba Stage",
+      schedule: [{ date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 70)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-10-02", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Maraba Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Maraba SC",
+      schedule: [{ date: "2026-03-31", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 71)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-10-03", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Muthura Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Muthura SC",
+      schedule: [{ date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 72)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-10-04", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Runda Primary School", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 1:00 PM", landmark: "Runda Primary",
+      schedule: [{ date: "2026-04-03", hours: "8:00 AM - 1:00 PM" }], ...getLocationCoordinates("Kiambu", 73)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-10-05", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Muhaka Stage", locationType: "Mobile_Kit", operatingHours: "1:00 PM - 5:00 PM", landmark: "Muhaka Stage",
+      schedule: [{ date: "2026-04-03", hours: "1:00 PM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 74)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-10-06", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Kabati Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kabati SC",
+      schedule: [{ date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 75)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-11-01", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Witeithie Stage", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 1:00 PM", landmark: "Witeithie Stage",
+      schedule: [{ date: "2026-03-30", hours: "8:00 AM - 1:00 PM" }], ...getLocationCoordinates("Kiambu", 76)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-11-02", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Witeithie Market", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Witeithie Market",
+      schedule: [
+        { date: "2026-03-30", hours: "1:00 PM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 77)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-11-03", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Chief's/Police Post", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Witeithie Police Post",
+      schedule: [{ date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 78)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-11-04", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Chief's Office/Police Post and Churches", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Witeithie Police Post",
+      schedule: [{ date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 79)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-12-01", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Kiahuria Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Kiahuria SC",
+      schedule: [
+        { date: "2026-03-30", hours: "8:00 AM - 5:00 PM" }, { date: "2026-03-31", hours: "8:00 AM - 5:00 PM" },
+        { date: "2026-04-05", hours: "8:00 AM - 5:00 PM" }
+      ], ...getLocationCoordinates("Kiambu", 80)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-12-02", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Farm Vuuma Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Farm Vuuma SC",
+      schedule: [{ date: "2026-04-01", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-02", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 81)
+    },
+    {
+      id: "KIT-JUJA-WITEITHIE-12-03", county: "Kiambu County", constituency: "Juja", ward: "Witeithie",
+      locationName: "Mtito Shopping Centre", locationType: "Mobile_Kit", operatingHours: "8:00 AM - 5:00 PM", landmark: "Mtito SC",
+      schedule: [{ date: "2026-04-03", hours: "8:00 AM - 5:00 PM" }, { date: "2026-04-04", hours: "8:00 AM - 5:00 PM" }], ...getLocationCoordinates("Kiambu", 82)
+    }
   ];
