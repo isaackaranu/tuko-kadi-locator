@@ -60,10 +60,16 @@ export default function App() {
     // Apply dropdown filters
     if (selectedCounty) results = results.filter(l => l.county === selectedCounty);
     if (selectedConstituency) results = results.filter(l => l.constituency === selectedConstituency);
-    if (selectedWard) {
-      if (selectedWard === "All Wards") {
-        results = results.filter(l => l.ward === "All Wards");
+    
+    if (selectedCounty || selectedConstituency) {
+      if (!selectedWard) {
+        // Rule 1: No ward selected -> Only Permanent Offices
+        results = results.filter(l => l.locationType === "Permanent_Office");
+      } else if (selectedWard === "All Wards") {
+        // Rule 2: "All Wards" -> Show all locations in the constituency
+        // No additional filtering needed, already filtered by constituency
       } else {
+        // Rule 3: Specific ward -> Show specific ward + Permanent Office ("All Wards")
         results = results.filter(l => l.ward === selectedWard || l.ward === "All Wards");
       }
     }
