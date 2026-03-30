@@ -170,166 +170,178 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
-      {/* Hero Section */}
-      <header className="bg-gradient-to-br from-[#1B5E20] to-[#0A3D0C] text-white py-12 px-4 text-center shadow-lg relative overflow-hidden">
+      {/* Top Section with Dark Green Background */}
+      <div className="relative bg-gradient-to-br from-[#1B5E20] to-[#0A3D0C] overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
-          <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-[#AAFA97] blur-3xl"></div>
-          <div className="absolute bottom-10 -left-10 w-32 h-32 rounded-full bg-[#822B2B] blur-3xl"></div>
+          <div className="absolute -top-10 -right-10 w-96 h-96 rounded-full bg-[#AAFA97] blur-3xl"></div>
+          <div className="absolute bottom-10 -left-10 w-72 h-72 rounded-full bg-[#822B2B] blur-3xl"></div>
+        </div>
+        
+        {/* Soft curved split at the bottom */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+          <svg className="relative block w-full h-[50px] lg:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.93,197.36,107.68Z" fill="#f9fafb" className="fill-gray-50"></path>
+          </svg>
         </div>
 
-        <div className="relative z-10 flex flex-col items-center">
-          {/* Faux Logo */}
-          <div className="flex justify-center items-center mb-5 relative">
-            <div className="relative flex items-center justify-center w-20 h-20 bg-white/5 rounded-3xl backdrop-blur-md border border-white/10 shadow-inner">
-              <ShieldCheck className="w-12 h-12 text-[#AAFA97]" strokeWidth={1.5} />
+        <div className="max-w-7xl mx-auto px-4 pt-12 pb-24 lg:pt-24 lg:pb-32 relative z-10 flex flex-col lg:flex-row items-center lg:items-center gap-12">
+          
+          {/* Left Column: Hero Content */}
+          <div className="flex-1 flex flex-col items-center text-center">
+            {/* Faux Logo */}
+            <div className="mb-5 relative">
+              <ShieldCheck className="w-16 h-16 text-[#AAFA97]" strokeWidth={1.5} />
+            </div>
+
+            {/* Badge */}
+            <span className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4 shadow-sm">
+              DCP Youth League
+            </span>
+
+            {/* Title */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 text-white drop-shadow-md">
+              Tuko Kadi Locator
+            </h1>
+            
+            {/* Tagline */}
+            <div className="inline-block mt-2">
+              <p className="text-white font-medium text-lg md:text-xl lg:text-2xl max-w-xl">
+                Track the Kit. Secure Your Vote.
+              </p>
             </div>
           </div>
 
-          {/* Badge */}
-          <span className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4 shadow-sm">
-            DCP Youth League
-          </span>
+          {/* Right Column: Search Card */}
+          <div className="w-full max-w-md lg:max-w-lg relative z-20">
+            {/* Search & Filters Section */}
+            <section className="bg-white p-6 lg:p-8 rounded-2xl shadow-2xl shadow-black/20 border border-gray-100 flex flex-col gap-5">
+              <div className="flex justify-between items-center mb-1">
+                <h2 className="font-semibold text-[#000000]">Find Your Registration Center</h2>
+                {isSearchActive && (
+                  <button
+                    onClick={handleClearFilters}
+                    className="text-xs text-[#5C1919] font-bold hover:underline bg-red-50 px-3 py-1.5 rounded-md transition-colors"
+                  >
+                    Clear All Filters
+                  </button>
+                )}
+              </div>
+              
+              {/* Search Bar */}
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <Search className="h-5 w-5 text-gray-400" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search by name, ward, constituency..."
+                  value={searchQuery}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                    if (e.target.value) {
+                      setSelectedCounty('');
+                      setSelectedConstituency('');
+                      setSelectedWard('');
+                      setUserLocation(null);
+                    }
+                  }}
+                  className="w-full h-12 pl-10 pr-3 text-base bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#1B5E20]/40 focus:border-[#1B5E20] text-[#000000] transition-colors"
+                />
+              </div>
 
-          {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 drop-shadow-lg">
-            Tuko Kadi Locator
-          </h1>
-          
-          {/* Tagline */}
-          <div className="bg-[#AAFA97] px-5 py-2 rounded-full shadow-lg inline-block transform -rotate-1">
-            <p className="text-[#822B2B] italic font-bold text-lg md:text-xl drop-shadow-sm">
-              Skiza Wakenya — Track the Kit. Secure Your Vote.
-            </p>
+              <div className="flex items-center gap-2 my-2">
+                <div className="h-px bg-gray-100 flex-grow"></div>
+                <span className="text-xs text-gray-300 font-medium uppercase tracking-wider">OR</span>
+                <div className="h-px bg-gray-100 flex-grow"></div>
+              </div>
+
+              {/* Geolocation Button */}
+              <button
+                onClick={handleGetLocation}
+                disabled={isLocating}
+                className="w-full h-12 bg-[#1B5E20] hover:bg-[#0A3D0C] text-white font-semibold rounded-lg flex items-center justify-center gap-2 transition-colors disabled:opacity-70 shadow-md"
+              >
+                <Navigation className={`w-5 h-5 ${isLocating ? 'animate-pulse' : ''}`} />
+                {isLocating ? 'Detecting Location...' : userLocation ? 'Location Active - Update' : 'Use My Current Location'}
+              </button>
+              
+              {locationError && (
+                <p className="text-xs text-[#822B2B] text-center font-medium">{locationError}</p>
+              )}
+
+              <div className="flex items-center gap-2 my-2">
+                <div className="h-px bg-gray-100 flex-grow"></div>
+                <span className="text-xs text-gray-300 font-medium uppercase tracking-wider">OR FILTER</span>
+                <div className="h-px bg-gray-100 flex-grow"></div>
+              </div>
+
+              {/* Dropdowns */}
+              <div>
+                <label htmlFor="county" className="block text-sm font-medium text-gray-700 mb-1">County</label>
+                <select
+                  id="county"
+                  value={selectedCounty}
+                  onChange={(e) => {
+                    setSelectedCounty(e.target.value);
+                    setSelectedConstituency('');
+                    setSelectedWard('');
+                    if (e.target.value) {
+                      setSearchQuery('');
+                      setUserLocation(null);
+                    }
+                  }}
+                  className="w-full h-12 px-3 text-base bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#1B5E20]/40 focus:border-[#1B5E20] text-[#000000] transition-colors"
+                >
+                  <option value="">Select County</option>
+                  {counties.map(county => (
+                    <option key={county} value={county}>{county}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="constituency" className="block text-sm font-medium text-gray-700 mb-1">Constituency</label>
+                <select
+                  id="constituency"
+                  value={selectedConstituency}
+                  onChange={(e) => {
+                    setSelectedConstituency(e.target.value);
+                    setSelectedWard('');
+                  }}
+                  disabled={!selectedCounty}
+                  className="w-full h-12 px-3 text-base bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#1B5E20]/40 focus:border-[#1B5E20] text-[#000000] disabled:opacity-50 disabled:bg-gray-100 transition-colors"
+                >
+                  <option value="">Select Constituency</option>
+                  {constituencies.map(constituency => (
+                    <option key={constituency} value={constituency}>{constituency}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="ward" className="block text-sm font-medium text-gray-700 mb-1">Ward</label>
+                <select
+                  id="ward"
+                  value={selectedWard}
+                  onChange={(e) => setSelectedWard(e.target.value)}
+                  disabled={!selectedConstituency}
+                  className="w-full h-12 px-3 text-base bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#1B5E20]/40 focus:border-[#1B5E20] text-[#000000] disabled:opacity-50 disabled:bg-gray-100 transition-colors"
+                >
+                  <option value="">Select Ward</option>
+                  {wards.map(ward => (
+                    <option key={ward} value={ward}>{ward}</option>
+                  ))}
+                </select>
+              </div>
+            </section>
           </div>
         </div>
-      </header>
+      </div>
 
       {/* Main Content */}
-      <main className="flex-grow max-w-md w-full mx-auto p-4 flex flex-col gap-6 -mt-6 relative z-20">
+      <main className="flex-grow max-w-3xl w-full mx-auto p-4 flex flex-col gap-6 relative z-20 -mt-8 lg:-mt-12">
         
-        {/* Search & Filters Section */}
-        <section className="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col gap-4">
-          <div className="flex justify-between items-center mb-1">
-            <h2 className="font-semibold text-[#000000]">Find Your Registration Center</h2>
-            {isSearchActive && (
-              <button
-                onClick={handleClearFilters}
-                className="text-xs text-[#822B2B] font-bold hover:underline bg-red-50 px-3 py-1.5 rounded-md transition-colors"
-              >
-                Clear All Filters
-              </button>
-            )}
-          </div>
-          
-          {/* Search Bar */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <Search className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="text"
-              placeholder="Search by name, ward, constituency..."
-              value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                if (e.target.value) {
-                  setSelectedCounty('');
-                  setSelectedConstituency('');
-                  setSelectedWard('');
-                  setUserLocation(null);
-                }
-              }}
-              className="w-full h-12 pl-10 pr-3 text-base bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1B5E20] focus:border-[#1B5E20] text-[#000000] transition-colors"
-            />
-          </div>
-
-          <div className="flex items-center gap-2">
-            <div className="h-px bg-gray-200 flex-grow"></div>
-            <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">OR</span>
-            <div className="h-px bg-gray-200 flex-grow"></div>
-          </div>
-
-          {/* Geolocation Button */}
-          <button
-            onClick={handleGetLocation}
-            disabled={isLocating}
-            className="w-full h-12 bg-[#e8f5e9] hover:bg-[#c8e6c9] text-[#1B5E20] font-semibold rounded-lg flex items-center justify-center gap-2 transition-colors border border-[#a5d6a7] disabled:opacity-70 shadow-sm"
-          >
-            <Navigation className={`w-5 h-5 ${isLocating ? 'animate-pulse' : ''}`} />
-            {isLocating ? 'Detecting Location...' : userLocation ? 'Location Active - Update' : 'Use My Current Location'}
-          </button>
-          
-          {locationError && (
-            <p className="text-xs text-[#822B2B] text-center font-medium">{locationError}</p>
-          )}
-
-          <div className="flex items-center gap-2">
-            <div className="h-px bg-gray-200 flex-grow"></div>
-            <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">OR FILTER</span>
-            <div className="h-px bg-gray-200 flex-grow"></div>
-          </div>
-
-          {/* Dropdowns */}
-          <div>
-            <label htmlFor="county" className="block text-sm font-medium text-gray-700 mb-1">County</label>
-            <select
-              id="county"
-              value={selectedCounty}
-              onChange={(e) => {
-                setSelectedCounty(e.target.value);
-                setSelectedConstituency('');
-                setSelectedWard('');
-                if (e.target.value) {
-                  setSearchQuery('');
-                  setUserLocation(null);
-                }
-              }}
-              className="w-full h-12 px-3 text-base bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1B5E20] focus:border-[#1B5E20] text-[#000000] transition-colors"
-            >
-              <option value="">Select County</option>
-              {counties.map(county => (
-                <option key={county} value={county}>{county}</option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="constituency" className="block text-sm font-medium text-gray-700 mb-1">Constituency</label>
-            <select
-              id="constituency"
-              value={selectedConstituency}
-              onChange={(e) => {
-                setSelectedConstituency(e.target.value);
-                setSelectedWard('');
-              }}
-              disabled={!selectedCounty}
-              className="w-full h-12 px-3 text-base bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1B5E20] focus:border-[#1B5E20] text-[#000000] disabled:opacity-50 disabled:bg-gray-100 transition-colors"
-            >
-              <option value="">Select Constituency</option>
-              {constituencies.map(constituency => (
-                <option key={constituency} value={constituency}>{constituency}</option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="ward" className="block text-sm font-medium text-gray-700 mb-1">Ward</label>
-            <select
-              id="ward"
-              value={selectedWard}
-              onChange={(e) => setSelectedWard(e.target.value)}
-              disabled={!selectedConstituency}
-              className="w-full h-12 px-3 text-base bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1B5E20] focus:border-[#1B5E20] text-[#000000] disabled:opacity-50 disabled:bg-gray-100 transition-colors"
-            >
-              <option value="">Select Ward</option>
-              {wards.map(ward => (
-                <option key={ward} value={ward}>{ward}</option>
-              ))}
-            </select>
-          </div>
-        </section>
-
         {/* Results Section */}
         {shouldShowResults && (
           <section className="flex flex-col gap-5 pb-8">
@@ -341,11 +353,11 @@ export default function App() {
                   </p>
                 ) : selectedConstituency ? (
                   <p className="font-medium text-sm">
-                    Found <span className="font-bold">{filteredLocations.length}</span> locations in <span className="font-bold">{selectedConstituency}</span>. Select your Ward to check for today's mobile kits.
+                    Found <span className="font-bold">{filteredLocations.length}</span> location{filteredLocations.length === 1 ? '' : 's'} in <span className="font-bold">{selectedConstituency}</span>. Select your Ward to check for today's mobile kits.
                   </p>
                 ) : (
                   <p className="font-medium text-sm">
-                    Found <span className="font-bold">{filteredLocations.length}</span> Permanent Offices in <span className="font-bold">{selectedCounty}</span>. Select a Constituency to narrow down.
+                    Found <span className="font-bold">{filteredLocations.length}</span> Permanent Office{filteredLocations.length === 1 ? '' : 's'} in <span className="font-bold">{selectedCounty}</span>. Select a Constituency to narrow down.
                   </p>
                 )}
               </div>
@@ -359,12 +371,19 @@ export default function App() {
               <>
                 {/* Mobile Kits */}
                 {activeMobileKits.map(kit => (
-                  <div key={kit.id} className="bg-white rounded-xl shadow-md border-2 border-[#AAFA97] overflow-hidden flex flex-col">
-                    <div className="bg-[#822B2B] text-white text-xs font-bold px-3 py-2 flex items-center justify-center gap-2 uppercase tracking-wider shadow-sm">
+                  <div key={kit.id} className="bg-white rounded-2xl shadow-lg shadow-black/5 border border-gray-100 overflow-hidden flex flex-col">
+                    <div className="bg-[#1B5E20] text-white text-xs font-bold px-3 py-2.5 flex items-center justify-center gap-2 uppercase tracking-wider shadow-sm">
                       <span className="w-2.5 h-2.5 bg-[#AAFA97] rounded-full animate-pulse"></span>
                       KIT IS HERE TODAY
                     </div>
                     <div className="p-6 flex flex-col gap-4 text-[#000000]">
+                      {(!selectedWard || searchQuery.trim() !== '') && kit.ward && (
+                        <div className="flex items-center gap-2 -mb-2">
+                          <span className="bg-gray-100 text-gray-600 text-[11px] font-bold px-2 py-1 rounded-md uppercase tracking-wider border border-gray-200">
+                            {kit.ward} Ward
+                          </span>
+                        </div>
+                      )}
                       <h3 className="text-xl font-bold flex items-start gap-3">
                         <div className="bg-[#1B5E20] p-1.5 rounded-lg shrink-0 mt-0.5">
                           <MapPin className="w-5 h-5 text-[#AAFA97]" />
@@ -380,7 +399,7 @@ export default function App() {
                           </div>
                         )}
                         {kit.landmark && (
-                          <p><span className="font-medium text-gray-600">Landmark:</span> {kit.landmark}</p>
+                          <p className="text-gray-600"><span className="font-bold text-gray-800">Landmark:</span> {kit.landmark}</p>
                         )}
                         <div className="flex items-center gap-1.5 font-medium">
                           <Clock className="w-4 h-4 text-[#1B5E20]" />
@@ -405,21 +424,21 @@ export default function App() {
                               return (
                                 <div 
                                   key={idx} 
-                                  className={`flex justify-between items-center text-sm px-3 py-2 rounded-lg border ${
+                                  className={`flex justify-between items-center text-sm px-3 py-2.5 rounded-lg border ${
                                     isToday 
-                                      ? 'bg-[#AAFA97] border-[#AAFA97] font-bold shadow-sm' 
-                                      : 'bg-gray-50 border-gray-200'
+                                      ? 'bg-[#e8f5e9] border-[#c8e6c9] font-bold text-[#1B5E20] shadow-sm' 
+                                      : 'bg-gray-50 border-gray-100'
                                   }`}
                                 >
                                   <span className="flex items-center gap-2">
                                     {dateString}
                                     {isToday && (
-                                      <span className="text-[10px] bg-[#822B2B] text-white px-2 py-0.5 rounded-full uppercase tracking-wider">
+                                      <span className="text-[10px] bg-[#1B5E20] text-white px-2 py-0.5 rounded-full uppercase tracking-wider font-semibold">
                                         Current
                                       </span>
                                     )}
                                   </span>
-                                  <span className={isToday ? 'text-[#000000]' : 'text-gray-600'}>{entry.hours}</span>
+                                  <span className={isToday ? 'text-[#1B5E20]' : 'text-gray-600'}>{entry.hours}</span>
                                 </div>
                               );
                             })}
@@ -429,7 +448,7 @@ export default function App() {
 
                       <button 
                         onClick={() => handleShare(kit)}
-                        className="mt-3 w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-sm"
+                        className="mt-3 w-full max-w-[350px] mx-auto bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-sm"
                       >
                         <Share2 className="w-5 h-5" />
                         Share on WhatsApp
@@ -440,12 +459,17 @@ export default function App() {
 
                 {/* Permanent Offices */}
                 {permanentOffices.map(office => (
-                  <div key={office.id} className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden flex flex-col">
+                  <div key={office.id} className="bg-white rounded-2xl shadow-lg shadow-black/5 border border-gray-100 overflow-hidden flex flex-col">
                     <div className="p-6 flex flex-col gap-4 text-[#000000]">
-                      <div className="flex items-center gap-2 mb-1">
+                      <div className="flex items-center flex-wrap gap-2 mb-3">
                         <span className="bg-gray-100 text-gray-600 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wide border border-gray-200">
                           Permanent Office
                         </span>
+                        {(!selectedWard || searchQuery.trim() !== '') && office.ward && office.ward !== 'All Wards' && (
+                          <span className="bg-gray-100 text-gray-600 text-[11px] font-bold px-2 py-1 rounded-md uppercase tracking-wider border border-gray-200">
+                            {office.ward} Ward
+                          </span>
+                        )}
                       </div>
                       <h3 className="text-xl font-bold flex items-start gap-3">
                         <div className="bg-gray-100 p-1.5 rounded-lg shrink-0 mt-0.5">
@@ -462,10 +486,10 @@ export default function App() {
                           </div>
                         )}
                         {office.address && (
-                          <p>{office.address}</p>
+                          <p className="text-gray-600">{office.address}</p>
                         )}
                         {office.landmark && (
-                          <p><span className="font-medium text-gray-600">Landmark:</span> {office.landmark}</p>
+                          <p className="text-gray-600"><span className="font-bold text-gray-800">Landmark:</span> {office.landmark}</p>
                         )}
                         <div className="flex items-center gap-1.5 font-medium mt-1">
                           <Calendar className="w-4 h-4 text-gray-500" />
@@ -475,7 +499,7 @@ export default function App() {
 
                       <button 
                         onClick={() => handleShare(office)}
-                        className="mt-3 w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-sm"
+                        className="mt-3 w-full max-w-[350px] mx-auto bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-sm"
                       >
                         <Share2 className="w-5 h-5" />
                         Share on WhatsApp
