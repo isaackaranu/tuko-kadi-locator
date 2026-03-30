@@ -1,0 +1,7 @@
+{
+  "name": "Tuko Kadi Locator",
+  "description": "Help a young voter find their nearest voter registration center in under 10 seconds. No authentication, no backend, no clutter.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
